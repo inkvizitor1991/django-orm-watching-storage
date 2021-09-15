@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.idea
+.replit
+.pyproject.toml
+poetry.lock
 
 # C extensions
 *.so
