@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.core.exceptions import ObjectDoesNotExist
 
 from datacenter.models import Passcard
@@ -11,8 +12,8 @@ from .models import is_visit_long
 def passcard_info_view(request, passcode):
     try:
         passcard = Passcard.objects.get(passcode=passcode)
-    except ObjectDoesNotExist:
-        print("Карточка не найдена")
+    except Passcard.DoesNotExist:
+        raise Http404('Карточка не найдена')
     active_visit = Visit.objects.filter(passcard=passcard)
     minutes = 60
     this_passcard_visits = []
