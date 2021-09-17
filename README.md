@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ### Как запустить
 В командной строке введите:
 ```
-python manage.py runserver 0.0.0.0:8000.
+python manage.py runserver 0.0.0.0:8000
 ```
 
 ### Цель проекта
