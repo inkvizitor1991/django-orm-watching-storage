@@ -9,11 +9,11 @@
 ### Как установить
 Рядом с кодом создайте файл `.env`, в котором будут храниться ваши личные данные:
 ```
-HOST='host'
-PORT='port'
-NAME='name'
-USER='user'
-PASSWORD='password'
+DB_HOST='host'
+DB_PORT='port'
+DB_NAME='name'
+DB_USER='user'
+DB_PASSWORD='password'
 SECRET_KEY='secret_key'
 DEBUG=True/False
 ```
