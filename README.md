@@ -16,6 +16,7 @@ DB_USER='user'
 DB_PASSWORD='password'
 SECRET_KEY='secret_key'
 DEBUG=True/False
+ALLOWED_HOSTS='allowed_hosts'
 ```
 Python3 должен быть уже установлен. Затем используйте `pip` (или `pip3`, есть
 конфликт с Python2) для установки зависимостей:
